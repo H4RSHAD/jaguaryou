@@ -18,17 +18,17 @@ st.markdown("""
 #MainMenu {visibility: hidden;}
 footer    {visibility: hidden;}
 
-/* Fondo general — blanco limpio */
-.stApp { background-color: #F8F9FA; }
+/* Fondo general oscuro */
+.stApp { background-color: #0D1117; }
 .block-container { padding-top: 1.5rem; }
 
 /* Hero banner */
 .hero {
-    background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 50%, #1B4332 100%);
+    background: linear-gradient(135deg, #0D1117 0%, #0f2a1a 60%, #0D1117 100%);
+    border: 1px solid #F0A500;
     border-radius: 16px;
     padding: 32px 40px;
     margin-bottom: 16px;
-    box-shadow: 0 4px 20px rgba(27,67,50,0.25);
 }
 .hero-title {
     font-size: 2.6rem;
@@ -39,7 +39,7 @@ footer    {visibility: hidden;}
 }
 .hero-sub {
     font-size: 1.05rem;
-    color: #D8F3DC;
+    color: #8B949E;
     margin: 0;
 }
 
@@ -52,13 +52,13 @@ footer    {visibility: hidden;}
     font-size: 0.92rem;
 }
 .ba-before {
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,100,100,0.6);
-    color: #FFD0D0;
+    background: rgba(244,67,54,0.08);
+    border: 1px solid rgba(244,67,54,0.4);
+    color: #EF9A9A;
 }
 .ba-after {
-    background: rgba(255,255,255,0.12);
-    border: 1px solid #F0A500;
+    background: rgba(240,165,0,0.08);
+    border: 1px solid rgba(240,165,0,0.5);
     color: #FFF9E6;
 }
 .ba-label {
@@ -67,7 +67,7 @@ footer    {visibility: hidden;}
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 6px;
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 /* Paso numerado */
@@ -88,44 +88,42 @@ footer    {visibility: hidden;}
     font-weight: 800;
     font-size: 0.85rem;
     flex-shrink: 0;
-    box-shadow: 0 2px 8px rgba(240,165,0,0.4);
 }
 .step-text {
     font-weight: 600;
     font-size: 1rem;
-    color: #1B4332;
+    color: #E6EDF3;
 }
 
 /* Tarjeta de detección */
 .det-card {
-    background: #fff;
-    border: 1px solid #DEE2E6;
+    background: #161B22;
+    border: 1px solid #30363D;
     border-left: 4px solid #F0A500;
     border-radius: 10px;
     padding: 18px 20px;
     margin-bottom: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 .det-especie {
     font-size: 1.3rem;
     font-weight: 800;
-    color: #1B4332;
+    color: #F0A500;
     margin: 0 0 4px 0;
 }
 .det-meta {
     font-size: 0.85rem;
-    color: #6C757D;
+    color: #8B949E;
     margin: 3px 0;
 }
 .conf-wrap { margin-top: 12px; }
 .conf-label {
     font-size: 0.8rem;
-    color: #6C757D;
+    color: #8B949E;
     margin-bottom: 5px;
     font-weight: 600;
 }
 .conf-bar-bg {
-    background: #E9ECEF;
+    background: #21262D;
     border-radius: 6px;
     height: 10px;
     overflow: hidden;
@@ -138,23 +136,22 @@ footer    {visibility: hidden;}
 .kpi-row { display: flex; gap: 14px; margin: 16px 0; }
 .kpi-card {
     flex: 1;
-    background: #fff;
-    border: 1px solid #DEE2E6;
+    background: #161B22;
+    border: 1px solid #30363D;
     border-top: 4px solid #F0A500;
     border-radius: 12px;
     padding: 20px 16px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 .kpi-val {
     font-size: 2.4rem;
     font-weight: 800;
-    color: #1B4332;
+    color: #F0A500;
     line-height: 1;
 }
 .kpi-lbl {
     font-size: 0.78rem;
-    color: #6C757D;
+    color: #8B949E;
     margin-top: 6px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
@@ -165,43 +162,41 @@ footer    {visibility: hidden;}
 .sec-header {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #1B4332;
+    color: #E6EDF3;
     border-left: 4px solid #F0A500;
     padding-left: 10px;
     margin: 24px 0 12px 0;
 }
 
 .golden-line {
-    height: 2px;
-    background: linear-gradient(90deg, #F0A500, #F8F9FA);
+    height: 1px;
+    background: linear-gradient(90deg, #F0A500, transparent);
     border: none;
     margin: 20px 0;
 }
 
-/* Tabs legibles sobre fondo claro */
+/* Tabs */
 [data-baseweb="tab-list"] {
-    background-color: #F8F9FA !important;
-    border-bottom: 2px solid #DEE2E6 !important;
+    background-color: #0D1117 !important;
+    gap: 4px;
 }
 [data-baseweb="tab"] {
-    color: #1B4332 !important;
+    color: #8B949E !important;
     font-weight: 600 !important;
     font-size: 0.95rem !important;
     background-color: transparent !important;
 }
 [data-baseweb="tab"]:hover {
     color: #F0A500 !important;
-    background-color: rgba(240,165,0,0.08) !important;
 }
 [aria-selected="true"][data-baseweb="tab"] {
     color: #F0A500 !important;
-    border-bottom: 3px solid #F0A500 !important;
 }
 [data-baseweb="tab-highlight"] {
     background-color: #F0A500 !important;
 }
 [data-baseweb="tab-border"] {
-    background-color: #DEE2E6 !important;
+    background-color: #30363D !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -533,12 +528,12 @@ with tab2:
         df_esp_cnt.columns = ["Especie", "Registros"]
         fig1 = px.bar(
             df_esp_cnt, x="Especie", y="Registros",
-            color="Especie", template="plotly_white",
-            color_discrete_sequence=["#1B4332","#2D6A4F","#F0A500","#52B788","#F77F00","#74C69D","#FCBF49","#B7E4C7"],
+            color="Especie", template="plotly_dark",
+            color_discrete_sequence=["#F0A500","#52B788","#74C69D","#FCBF49","#2D6A4F","#FFD54F","#B7E4C7","#F77F00"],
         )
         fig1.update_layout(
             showlegend=False, margin=dict(t=10, b=80),
-            plot_bgcolor="#FFFFFF", paper_bgcolor="#F8F9FA",
+            plot_bgcolor="#161B22", paper_bgcolor="#0D1117",
         )
         fig1.update_xaxes(tickangle=-30)
         st.plotly_chart(fig1, use_container_width=True)
@@ -549,12 +544,12 @@ with tab2:
         df_est_cnt.columns = ["Estacion", "Registros"]
         fig2 = px.pie(
             df_est_cnt, names="Estacion", values="Registros",
-            hole=0.4, template="plotly_white",
-            color_discrete_sequence=["#1B4332","#F0A500","#52B788","#F77F00"],
+            hole=0.4, template="plotly_dark",
+            color_discrete_sequence=["#F0A500","#52B788","#FCBF49","#2D6A4F"],
         )
         fig2.update_layout(
             margin=dict(t=10),
-            plot_bgcolor="#FFFFFF", paper_bgcolor="#F8F9FA",
+            plot_bgcolor="#161B22", paper_bgcolor="#0D1117",
         )
         st.plotly_chart(fig2, use_container_width=True)
 
@@ -566,12 +561,12 @@ with tab2:
         df_conf_avg = df_conf_avg.sort_values("Confianza Promedio (%)", ascending=False)
         fig3 = px.bar(
             df_conf_avg, x="Especie", y="Confianza Promedio (%)",
-            color="Especie", template="plotly_white",
-            color_discrete_sequence=["#F0A500","#1B4332","#52B788","#F77F00","#2D6A4F","#FCBF49","#74C69D","#B7E4C7"],
+            color="Especie", template="plotly_dark",
+            color_discrete_sequence=["#F0A500","#52B788","#FCBF49","#2D6A4F","#74C69D","#FFD54F","#B7E4C7","#F77F00"],
         )
         fig3.update_layout(
             showlegend=False, margin=dict(t=10, b=80),
-            plot_bgcolor="#FFFFFF", paper_bgcolor="#F8F9FA",
+            plot_bgcolor="#161B22", paper_bgcolor="#0D1117",
         )
         fig3.update_xaxes(tickangle=-30)
         st.plotly_chart(fig3, use_container_width=True)
